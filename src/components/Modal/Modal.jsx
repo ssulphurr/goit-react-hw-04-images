@@ -12,7 +12,7 @@ export default function Modal({ onClose, bigImg }) {
     return () => {
       window.removeEventListener('keydown', handleKeyDown);
     };
-  }, []);
+  });
 
   const handleOverlayClick = e => {
     if (e.target !== e.currentTarget) {
