@@ -4,10 +4,10 @@ import css from './ImageGalleryItem.module.css';
 import Modal from 'components/Modal/Modal';
 
 export default function ImageGalleryItem({ smallImg, bigImg, tags }) {
-  const [showModal, setShowMofal] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const toggleModal = () => {
-    setShowMofal(!showModal);
+    setShowModal(!showModal);
   };
 
   return (
