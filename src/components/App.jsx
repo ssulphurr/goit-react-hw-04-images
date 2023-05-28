@@ -45,7 +45,7 @@ export function App() {
 
       fetchData();
     }
-  }, [searchInput, images, page]);
+  }, [searchInput, page]);
 
   const increasePage = () => {
     setPage(page + 1);
