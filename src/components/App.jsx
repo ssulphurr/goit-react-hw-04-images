@@ -32,7 +32,7 @@ export function App() {
         const response = await api.fetchImages(searchInput, page);
 
         try {
-          setImages([...images, ...response.data.hits]);
+          setImages(images => [...images, ...response.data.hits]);
           setTotalImages(
             Number(response.data.total) / Number(response.data.hits.length)
           );
